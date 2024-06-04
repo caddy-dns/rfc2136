@@ -65,6 +65,6 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 }
 
 var (
-	_ caddyfile.Unmarshaler     = (*Provider)(nil)
-	_ certmagic.ACMEDNSProvider = (*Provider)(nil)
+	_ caddyfile.Unmarshaler = (*Provider)(nil)
+	_ certmagic.DNSProvider = (*Provider)(nil)
 )
