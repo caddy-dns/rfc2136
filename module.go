@@ -64,6 +64,17 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 	return nil
 }
 
+func (p *Provider) Provision(_ caddy.Context) error {
+	repl := caddy.NewReplacer()
+
+	p.KeyName = repl.ReplaceAll(p.KeyName, "")
+	p.Key = repl.ReplaceAll(p.Key, "")
+	p.KeyAlg = repl.ReplaceAll(p.KeyAlg, "")
+	p.Server = repl.ReplaceAll(p.Server, "")
+
+	return nil
+}
+
 var (
 	_ caddyfile.Unmarshaler = (*Provider)(nil)
 	_ certmagic.DNSProvider = (*Provider)(nil)
