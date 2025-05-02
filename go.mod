@@ -7,7 +7,7 @@ toolchain go1.24.0
 require (
 	github.com/caddyserver/caddy/v2 v2.10.0
 	github.com/caddyserver/certmagic v0.23.0
-	github.com/libdns/rfc2136 v1.0.0
+	github.com/libdns/rfc2136 v1.0.1
 )
 
 require (
@@ -19,7 +19,7 @@ require (
 	github.com/google/pprof v0.0.0-20250423184734-337e5dd93bb4 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.10 // indirect
-	github.com/libdns/libdns v1.0.0-beta.1.0.20250423132730-e0df105aed0e // indirect
+	github.com/libdns/libdns v1.0.0 // indirect
 	github.com/mholt/acmez/v3 v3.1.2 // indirect
 	github.com/miekg/dns v1.1.65 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
